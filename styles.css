@@ -77,6 +77,8 @@ body {
   line-height: 100%; /* 16px */
 
   background-color: #06181c;
+
+  height: 4.8rem;
 }
 
 .header__input-container input::placeholder {
@@ -113,4 +115,101 @@ body {
 
 .header__input-container button:hover path {
   fill: #065e7c;
+}
+
+.main {
+  width: 100%;
+  margin-top: 8.6rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 1.2rem;
+  border: 1px solid #065e7c;
+}
+
+.table,
+.table__btn-remove {
+  color: #e1e1e6;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.table tr:nth-child(even) {
+  border: 1px solid #4a808c;
+  background-color: #06181c;
+}
+
+.table th,
+.table td {
+  padding: 1.6rem 4rem;
+  text-align: start;
+}
+
+.table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+.table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 1.2rem;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 1.2rem;
+}
+
+.table__head tr {
+  background-color: #092d38;
+  color: #fff;
+}
+
+.table__head th {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user-wrapper img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+.user-wrapper > div {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+}
+
+.user-wrapper > div span {
+  font-weight: 400;
+}
+
+.table__btn-remove {
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+  color: #f75a68;
+}
+
+.table__btn-remove:hover {
+  color: #f7626f;
+  filter: brightness(1.1);
 }
