@@ -123,11 +123,34 @@ body {
 }
 
 .table {
+  display: block;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 1.2rem;
   border: 1px solid #065e7c;
+
+  height: 70rem;
+  overflow-y: auto;
+}
+
+.table th {
+  width: 100%;
+}
+
+.table::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  background-color: transparent;
+}
+
+.table::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: #4a808c;
+  border-radius: 12px;
 }
 
 .table,
@@ -138,6 +161,10 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
+}
+
+.table tr {
+  height: 10.4rem;
 }
 
 .table tr:nth-child(even) {
@@ -212,4 +239,34 @@ body {
 .table__btn-remove:hover {
   color: #f7626f;
   filter: brightness(1.1);
+}
+
+.table__body {
+  max-height: 60rem;
+  overflow-y: scroll;
+}
+
+.table__empty-data {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  color: #4e5455;
+  font-family: monospace;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+h2 img {
+  width: 13.2rem;
+  height: 12.4rem;
 }
